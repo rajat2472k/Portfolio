@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down" />
+
+  </head>
+  <body>
+    <main>
+      <!-- #ASIDE -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="profile-image">
+            <img src="Media/image2.JPG" alt="">
+          </figure>
+
+          <div class="content-info">
+            <h1 class="name" title="Rajat_Kumar">Rajat Kumar</h1>
+            <p class="title">FrontEnd Web Developer</p>
+          </div>
+
+          <button class="more-info-btn" data-sidebar-btn>
+            <img
+              src="Media/down-chevron.png"
+              alt="down-chevron"
+              width="15"
+            /><span>Show Contacts</span>
+          </button>
+        </div>
+
+        <div class="sidebar-more-info">
+          <div class="spatration-line"></div>
+
+          <ul class="content-list-1">
+            <li class="content-item">
+              <div class="icon-box">
+                <img src="Media/gmail (1).png" alt="mail" width="18" />
+              </div>
+
+              <div class="content-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:rajat24072000@gmail.com" class="contact-list"
+                  >rajat24072000@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="content-item">
+              <div class="icon-box">
+                <img src="Media/phone-call.png" alt="Phone" width="18" />
+              </div>
+
+              <div class="content-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+919015190843" class="contact-list"
+                  >+91 9015190843</a
+                >
+              </div>
+            </li>
+
+            <li class="content-item">
+              <div class="icon-box">
+                <img src="Media/calendar.png" alt="Calendar" width="18" />
+              </div>
+
+              <div class="content-info">
+                <p class="contact-title">Birthday</p>
+                <a href="tel:+919015190843"
+                  ><time datetime="24-7-2000">24 July, 2000</time>
+                </a>
+              </div>
+            </li>
+
+            <li class="content-item">
+              <div class="icon-box">
+                <img src="Media/home-address.png" alt="Address" width="18" />
+              </div>
+
+              <div class="content-info">
+                <p class="contact-title">Location</p>
+                <div class="address">Kangra, Himachal Pradesh</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="spatration-line"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="Media/facebook.png" alt="Facebook" width="20" />
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="Media/message.png" alt="Linkedin" width="20" />
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <img src="Media/github (1).png" alt="Github" width="20" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="section-container">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>
+                Portfolio
+              </button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Contact</button>
+            </li>
+           
+          </ul>
+        </nav>
+
+        <!------------ About-Section --------------->
+        <article class="about active" data-page="about">
+          <div class="heading-section">
+            <h1 class="About">About</h1>
+            <div class="buttom-line"></div>
+          </div>
+
+          <div class="about-discription">
+            <p>
+              I'm Rajat , an Indian computer postgraduate and agile full-stack
+              web developer who loves nothing more than working with people,
+              building amazing software, and solving technical problems. During
+              my years of engineering course, I have grown a strong passion for
+              backend development and mobile app development, which led me to a
+              good understanding of its underlying technologies.
+            </p>
+          </div>
+
+          <div class="service-section">
+            <h2 class="doing">What i'm doing</h2>
+            <div class="service flex">
+              <ul class="content-list-1">
+                <li class="content-item-srv">
+                  <div class="icon-srv">
+                    <img src="Media/ux-design (1).png" alt="mail" width="100%" />
+                  </div>
+
+                  <div class="content-info">
+                    <p class="contact-title1">UI Design</p>
+                    <p class="discription">
+                      Transforming complex ideas into beautiful, intuitive, and seamless digital experiences.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="content-item-srv">
+                  <div class="icon-srv">
+                    <img src="Media/responsive-design (1).png" alt="mail" width="100%" />
+                  </div>
+
+                  <div class="content-info">
+                    <p class="contact-title1">Responsive Web Design</p>
+                    <p class="discription">
+                      I can craft stunning, fully responsive web designs that adapt seamlessly to any device, ensuring a smooth and engaging user experience on every screen size.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="content-item-srv">
+                  <div class="icon-srv">
+                    <img src="Media/layout (2).png" alt="mail" width="100%" />
+                  </div>
+
+                  <div class="content-info">
+                    <p class="contact-title1">Website Layout & Structure</p>
+                    <p class="discription">
+                      "Crafting seamless, visually stunning layouts that combine user-friendly navigation with modern design, ensuring every visitor's journey is smooth and engaging
+                    </p>
+                  </div>
+                </li>
+
+                <li class="content-item-srv">
+                  <div class="icon-srv">
+                    <img src="Media/data.png" alt="mail" width="100%" />
+                  </div>
+
+                  <div class="content-info">
+                    <p class="contact-title1">Front-End Frameworks</p>
+                    <p class="discription">
+                      I can craft visually stunning and highly responsive user interfaces using modern front-end frameworks  ensuring seamless performance across all devices.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!----------------- Resume ------------------->
+        <article class="resume" data-page="resume">
+          <div class="heading-section">
+            <h2 class="About">Resume</h2>
+            <div class="buttom-line"></div>
+          </div>
+          <div class="educt-heading">
+            <div class="icon-srv">
+              <img src="Media/education (1).png" alt="mail" width="100%" />
+            </div>
+            <h2 class="educt">Education</h2>
+          </div>
+
+          <ol class="study-list">
+            <li class="study-item">
+              <h4 class="h4 study-item-title">Post Graduation</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="study-text">
+                This degree has provided me with in-depth knowledge of computer science and web technologies, and has prepared me to excel in the field of front-end web development, with a focus on building user-friendly and responsive interfaces.
+              </p>
+            </li>
+
+            <li class="study-item">
+              <h4 class="h4 study-item-title">Graduation</h4>
+
+              <span>2019 — 2022</span>
+
+              <p class="study-text">
+                I’ve built a solid foundation in programming and IT concepts. This degree has fueled my passion for creating innovative tech solutions, and it has empowered me with the skills needed to bring ideas to life in the digital world.
+              </p>
+            </li>
+
+            <li class="study-item">
+              <h4 class="h4 study-item-title">Senier Secandry</h4>
+
+              <span>2018</span>
+
+              <p class="study-text">
+                I completed my Senior Secondary education, a time when curiosity met knowledge and ambition took flight. It was a journey of exploring new ideas, laying a solid foundation for my future.  
+              </p>
+            </li>
+          </ol>
+
+          <div class="educt-heading">
+            <div class="icon-srv">
+              <img src="Media/working.png" alt="mail" width="100%" />
+            </div>
+            <h2 class="educt">Experience</h2>
+          </div>
+
+          <ol class="study-list">
+            <li class="study-item">
+              <h4 class="h4 study-item-title">Internship</h4>
+
+              <span>2024(January-June)</span>
+
+              <p class="study-text">
+                I completed a 6-month internship in the MERN stack, where I gained hands-on experience in building full-stack web applications. During this time, I developed skills in MongoDB, Express.js, React.js, and Node.js, working on real-world projects that enhanced my understanding of  front-end development and boosted my problem-solving abilities.
+              </p>
+            </li>
+
+            <li class="study-item">
+              <h4 class="h4 study-item-title">Post Graduation</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="study-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                delenit atque corrupti, quos dolores et quas molestias exceptur.
+              </p>
+            </li>
+          </ol>
+
+          <div class="educt-heading">
+            <div class="icon-srv">
+              <img src="Media/skills.png" alt="mail" width="100%" />
+            </div>
+            <h2 class="educt">Skill</h2>
+          </div>
+
+          <div class="skill-section">
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-title">
+                  <p>JS (Java Script)</p>
+                  <span>50%</span>
+                </div>
+                <div class="skill-title-width">
+                  <div class="skill-title-range" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-title">
+                  <p>Framework (Tailwind, Bootstrap)</p>
+                  <span>60%</span>
+                </div>
+                <div class="skill-title-width">
+                  <div class="skill-title-range" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-title">
+                  <p>CSS (Cascading Style Sheets)</p>
+                  <span>65%</span>
+                </div>
+                <div class="skill-title-width">
+                  <div class="skill-title-range" style="width: 65%"></div>
+                </div>
+              </li>
+
+              <li class="skill-item">
+                <div class="skill-title">
+                  <p>HTML (HypertextMarkupLanguage)</p>
+                  <span>75%</span>
+                </div>
+                <div class="skill-title-width">
+                  <div class="skill-title-range" style="width: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!--------------- Portfolio -------------->
+
+        <article class="portfolio" data-page="portfolio">
+          <div class="heading-section">
+            <h2 class="About">Portfolio</h2>
+            <div class="buttom-line"></div>
+          </div>
+          <div class="project-container">
+            <nav class="project-navbar">
+              <ul class="project-list">
+                <li class="navbar-item">
+                  <button class="project-link active" project-nav-link>
+                    All
+                  </button>
+                </li>
+                <li class="navbar-item">
+                  <button class="project-link" project-nav-link>
+                    Web Design
+                  </button>
+                </li>
+                <li class="navbar-item">
+                  <button class="project-link" project-nav-link>Applictions</button>
+                </li>
+                <li class="navbar-item">
+                  <button class="project-link" project-nav-link>Web Development</button>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="project-box">
+              <!-- All -->
+              <li class="project-box-icon active" project-page="all">
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <div class="view-icon">
+                        <img src="Media/view (1).png" alt="" width="100">
+                      </div>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">All project</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <!-- wed-design -->
+              <li class="project-box-icon" project-page="web design">
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <div class="view-icon">
+                        <img src="Media/view (1).png" alt="" width="100">
+                      </div>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">all project</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <!-- application -->
+              <li class="project-box-icon" project-page="applictions">
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <div class="view-icon">
+                        <img src="Media/view (1).png" alt="" width="100">
+                      </div>
+                    </div>
+                  </figure>
+                  <h3 class="project-title">all project</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <!-- web development -->
+              <li
+                class="project-box-icon"
+                project-page="web development"
+              >
+              <a href="">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <div class="view-icon">
+                      <img src="Media/view (1).png" alt="" width="100">
+                    </div>
+                  </div>
+                </figure>
+                <h3 class="project-title">all project</h3>
+                <p class="project-category">Web development</p>
+              </a>
+              </li>
+
+            </ul>
+          </div>
+        </article>
+
+        <!-------------- Contact-section --------------->
+        <article class="contact" data-page="contact">
+          <div class="heading-section">
+            <h2 class="About">Contact</h2>
+            <div class="buttom-line"></div>
+          </div>
+
+          <section class="mapbox">
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106649.91022633729!2d76.32813900404166!3d32.20785139175931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1729374499444!5m2!1sen!2sin" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h2 class="h2 form-title">Contact Form</h2>
+            
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+        </article>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

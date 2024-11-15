@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlarge Screen Feature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>/* Modal Styles */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close-button {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  </style>
+<body>
+  <article class="portfolio" data-page="portfolio">
+    <div class="heading-section">
+        <h2 class="About">Portfolio</h2>
+        <div class="buttom-line"></div>
+    </div>
+    <div class="project-container">
+        <nav class="project-navbar">
+            <ul class="project-list">
+                <li class="navbar-item">
+                    <button class="project-link active" project-nav-link>All</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="project-link" project-nav-link>Web Design</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="project-link" project-nav-link>Applications</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="project-link" project-nav-link>Web Development</button>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="project-box">
+            <li class="project-box-icon active" project-page="all">
+                <a href="">
+                    <figure class="project-img">
+                        <div class="project-item-icon-box">
+                            <div class="view-icon">
+                                <img src="Media/view (1).png" alt="" width="100">
+                            </div>
+                        </div>
+                        <img src="Media/image2.JPG" alt="">
+                    </figure>
+                    <h3 class="project-title">All project</h3>
+                    <p class="project-category">Web development</p>
+                </a>
+            </li>
+            <!-- Add other projects here -->
+        </ul>
+    </div>
+</article>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Project Details</h3>
+        <p>Additional information about the project can go here.</p>
+        <img src="Media/image2.JPG" alt="Project Image" width="100%">
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle modal
+    const modal = document.getElementById("myModal");
+    const viewIcons = document.querySelectorAll('.view-icon');
+    const closeButton = document.querySelector('.close-button');
+
+    // Function to open modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // Function to close modal
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Event listener for view icons
+    viewIcons.forEach(icon => {
+        icon.addEventListener('click', openModal);
+    });
+
+    // Event listener for the close button
+    closeButton.addEventListener('click', closeModal);
+
+    // Event listener for clicking outside of the modal
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+</script>
+
+</body>
+</html>
